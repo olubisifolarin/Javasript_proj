@@ -36,6 +36,18 @@
         #errorMsg{
             color: red;
         }
+
+    @media only screen and (min-width: 320px) and (max-width:1128px) {
+    .container-fluid{
+        text-align: center;
+        background-size: cover;
+   }
+
+   .myFormContainer{
+     width: 300px;
+   }
+}
+
         
     </style>
 </head>
@@ -64,10 +76,10 @@
                 errorMsg.textContent = 'Fields cannot be empty'
                 return false;
             }
-            if(document.myForm.username.value !== 'Ernest'){
-                errorMsg.textContent = 'Access denied'
-                return false;
-            }
+            // if(document.myForm.username.value !== 'Ernest'){
+            //     errorMsg.textContent = 'Access denied'
+            //     return false;
+            // }
         }
     </script>
 
